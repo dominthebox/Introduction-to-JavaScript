@@ -86,7 +86,7 @@ function dogYears(age){
     return age*7;
 }
 
-console.log(dogYears(17));
+console.log(dogYears(32));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -181,7 +181,7 @@ function game(user, computer){
     }
 }
   
-console.log('task 4', game(user:any, computer:any));  
+console.log('task 4', game("rock", computer));  
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -212,7 +212,7 @@ function feet(cm){
     return cm / 30.48;
   }
  
-console.log('task 5b', feet(190));
+console.log('task 5b', feet(183));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -224,9 +224,12 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+function annoyingSong(number){
+  for (let i = number; i > 0; i--){
+    return (`${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i - 1} bottles of soda on the wall`)
   }
+ }
+console.log('task 6', annoyingSong(90));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -244,11 +247,20 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
   
-function grade(/*Your Code here */){
-  /*Your Code here */
+function grade(score){
+  if(score >= 90 && score <= 100){
+    return 'you got an A';
+  }else if (score >= 80 && score <=89){
+    return 'you got a B';
+  }else if (score >= 70 && score <= 79){
+    return 'you got a C';
+  }else if (score >= 60 && score <= 69){
+    return 'you got a D';
+  }else (score < 69)
+    return 'you got a F';
   }
   
-  
+  console.log('task 7', grade(75));
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
